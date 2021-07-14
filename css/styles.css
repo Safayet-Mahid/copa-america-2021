@@ -99,6 +99,7 @@ a {
 }
 .hero-sec .transition-text {
   /* color: gold; */
+  /* font-size: 48px; */
 }
 .hero-image {
   flex: 1;
@@ -214,7 +215,6 @@ a {
   align-items: center;
   padding: 50px 0;
   gap: 25px;
-  font-size: 28px;
   font-weight: 500;
 }
 .next-match span {
@@ -248,7 +248,7 @@ a {
 
 .gallery-image-sec {
   flex-basis: 55%;
-  /* overflow: hidden; */
+
   background-color: #2d25a0ef;
   border-radius: 10px;
   display: flex;
@@ -261,8 +261,6 @@ a {
 
 .gallery-image-sec h2 {
   text-align: center;
-  /* position: relative;
-  bottom: -155px; */
   font-weight: 500;
   font-size: 32px;
   color: #fff;
@@ -364,6 +362,10 @@ footer p {
 /* ================================Responsive========================= */
 /* ========================mobile devices================ */
 @media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
   .nav-links li {
     display: none;
   }
@@ -373,6 +375,19 @@ footer p {
 
   .hero-sec {
     flex-direction: column;
+    gap: 15px;
+    padding: 10px 0 0;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  .hero-image {
+    height: 100%;
+  }
+  .hero-sec:hover .transition-text {
+    font-size: 36px;
   }
   .players {
     grid-template-columns: 1fr;
@@ -380,24 +395,39 @@ footer p {
   .player {
     margin: 24px 0;
   }
+  player h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
   .highlights {
     flex-direction: column;
+    margin-top: 50px;
+  }
+  .highlights-text h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
   .next-match-wrapper {
     width: 95%;
-  } /*
+  }
   .next-match {
-    gap: 10px;
+    gap: 8px;
+    padding: 25px 0;
+  }
+  .next-match img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
   }
   .next-match span {
-    font-size: 28px;
-    font-weight: 550;
-  } */
+    font-size: 24px;
+    /* font-weight: 550; */
+  }
   .next-match .score {
-    font-size: 28px;
+    font-size: 18px;
   }
   .team {
-    margin: 0 40px;
+    margin: 0 10px;
   }
   .gallery {
     flex-direction: column;
